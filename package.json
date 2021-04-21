@@ -1,5 +1,5 @@
 {
-  "name": "components",
+  "name": "@tompeace/component-library",
   "version": "1.0.0",
   "license": "MIT",
   "module": "dist/components.esm.js",
@@ -27,7 +27,8 @@
   },
   "dependencies": {
     "@emotion/react": "^11.1.5",
-    "@emotion/styled": "^11.1.5"
+    "@emotion/styled": "^11.1.5",
+    "@tailwindcss/aspect-ratio": "^0.2.0"
   },
   "devDependencies": {
     "@babel/core": "^7.13.8",

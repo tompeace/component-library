@@ -24,11 +24,9 @@ export default {
       // js/tsx file usage:
       // import { func } from 'my-lib';
       // func();
-      // file: pkg.module,
-      dir: './dist',
+      file: pkg.module,
       format: 'es',
       sourcemap: true,
-      preserveModules: true,
     },
   ],
   plugins: [

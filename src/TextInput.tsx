@@ -1,20 +1,12 @@
-import 'twin.macro'
-import { ReactElement } from 'react'
+import tw, { styled } from 'twin.macro'
 
 interface TextInputProps {
-  placeholder?: string;
-  value?: string;
-  onChange(e: any): void
+  disabled?: boolean;
 }
 
-export default function TextInput(props: TextInputProps): ReactElement {
-  return (
-    <input
-      tw='border border-black'
-      type="text"
-      placeholder={props.placeholder}
-      value={props.value}
-      onChange={props.onChange}
-    />
-  )
-}
+const TextInput = styled.input(({ disabled }: TextInputProps) => [
+  tw`px-4 py-2 border-2 border-black rounded focus:outline-none`,
+  disabled && tw`border-gray-600 bg-gray-300`
+])
+
+export default TextInput
