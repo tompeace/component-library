@@ -1,4 +1,4 @@
-import tw, { css, styled, theme } from 'twin.macro'
+import tw, { styled } from 'twin.macro'
 
 interface ButtonProps {
   variant?: 'primary' | 'secondary' | 'danger'
